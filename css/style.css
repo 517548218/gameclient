@@ -2,8 +2,32 @@
 	float: left;
 	padding: 10px;
 	background-color: white;
-	margin: 10px;
+	margin: 30px;
+	/*box-shadow: 0px 0px 20px black;//正右下负左上,5宽度*/
+	box-shadow: 0px -5px 5px red,5px 0px 5px green,0px 5px 5px yellow,-5px 0px 5px blue;
+	border-radius:5px ;/*圆角*/
+	/*transform: rotate(5deg);旋转*/
+	transition: transform 0.3s linear;/*transform线性过度*/
 	
+}
+/*.photos:nth-child(1){
+	transform: rotate(5deg);
+}
+.photos:nth-child(3){
+	transform: rotate(-5deg);
+}
+.photos:nth-child(2n){
+	transform: rotate(-5deg);
+}
+.photos:nth-child(even){奇数
+	transform: rotate(-5deg);
+}
+.photos:nth-child(odd){偶数
+	transform: rotate(-5deg);
+}*/
+.photos:hover{/*放大1.2倍*/
+	transform: scaleX(1.2);
+	/*transform: scaleX(1.2);*/
 }
 
 .photos img {
