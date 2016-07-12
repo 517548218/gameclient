@@ -4,7 +4,7 @@
 }
 body,html{
 	font-family: game;
-	font-size: 12px;
+	font-size: 16px;
 }
 .login-con{
 	background-image: url(../img/login-bg.jpg);
@@ -46,4 +46,58 @@ body,html{
 .login-con input:hover,.login-con button:hover{
 	color: green;
 	
+}
+.main-con{
+	width: 1200px;
+	height: 600px;
+	margin: auto;
+	background-image: url(../img/main-bg.jpg);
+	position: relative;
+}
+.main-con .userinfo{
+	position: absolute;
+	width: 250px;
+	height: 150px;
+	top:70px ;
+	left:110px
+}
+.main-con .online{
+	position: absolute;
+	width: 285px;
+	height:175px ;
+	left: 100px;
+	bottom: 135px;
+}
+.main-con .head{
+	/*border: 1px solid red;*/
+	/*第二种去掉浮动方式overflow: hidden;q-去掉浮动*/
+	
+}
+.main-con .head:after{/*第三种去掉浮动*/
+	content: ' ';
+	display: block;
+	clear:both;
+}
+.main-con .head:before{
+	content: ' ';
+	display: block;
+	clear:both;
+}
+.main-con .head h3{
+	float: left;
+	margin: 0px;
+}
+.main-con .head span{
+	float: right;
+}
+.main-con .body{
+	height: 140px;
+	overflow: scroll;/*滚动*/
+	
+}
+.main-con .body table {
+	width: 100%;
+}
+.main-con .body table tr {
+	height: 30px;
 }
